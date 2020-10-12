@@ -1,0 +1,106 @@
+tech-campnoMacBook-Air-6:first_app tech-camp$ 
+tech-campnoMacBook-Air-6:first_app tech-camp$ 
+tech-campnoMacBook-Air-6:first_app tech-camp$ pwd
+/Users/tech-camp/基礎3.0/projects/first_app
+tech-campnoMacBook-Air-6:first_app tech-camp$ rails g first_app
+wRunning via Spring preloader in process 35825
+xCould not find generator 'first_app'. 
+Run `rails generate --help` for more options.
+tech-campnoMacBook-Air-6:first_app tech-camp$ 
+tech-campnoMacBook-Air-6:first_app tech-camp$ 
+tech-campnoMacBook-Air-6:first_app tech-camp$ 
+tech-campnoMacBook-Air-6:first_app tech-camp$ pwd
+/Users/tech-camp/基礎3.0/projects/first_app
+tech-campnoMacBook-Air-6:first_app tech-camp$ ralls g controller posts
+-bash: ralls: command not found
+tech-campnoMacBook-Air-6:first_app tech-camp$ rails g controller posts
+Running via Spring preloader in process 35927
+      create  app/controllers/posts_controller.rb
+      invoke  erb
+      create    app/views/posts
+      invoke  test_unit
+      create    test/controllers/posts_controller_test.rb
+      invoke  helper
+      create    app/helpers/posts_helper.rb
+      invoke    test_unit
+      invoke  assets
+      invoke    scss
+      create      app/assets/stylesheets/posts.scss
+tech-campnoMacBook-Air-6:first_app tech-camp$ 
+tech-campnoMacBook-Air-6:first_app tech-camp$ 
+tech-campnoMacBook-Air-6:first_app tech-camp$ 
+tech-campnoMacBook-Air-6:first_app tech-camp$ pwd
+/Users/tech-camp/基礎3.0/projects/first_app
+tech-campnoMacBook-Air-6:first_app tech-camp$ rails g model post
+Running via Spring preloader in process 41971
+      invoke  active_record
+      create    db/migrate/20200829071456_create_posts.rb
+      create    app/models/post.rb
+      invoke    test_unit
+      create      test/models/post_test.rb
+      create      test/fixtures/posts.yml
+tech-campnoMacBook-Air-6:first_app tech-camp$ 
+tech-campnoMacBook-Air-6:first_app tech-camp$ 
+tech-campnoMacBook-Air-6:first_app tech-camp$ pwd
+/Users/tech-camp/基礎3.0/projects/first_app
+tech-campnoMacBook-Air-6:first_app tech-camp$ rails db migrate
+Traceback (most recent call last):
+	27: from bin/rails:3:in `<main>'
+	26: from bin/rails:3:in `load'
+	25: from /Users/tech-camp/基礎3.0/projects/first_app/bin/spring:15:in `<top (required)>'
+	24: from /Users/tech-camp/.rbenv/versions/2.6.5/lib/ruby/2.6.0/rubygems/core_ext/kernel_require.rb:54:in `require'
+	23: from /Users/tech-camp/.rbenv/versions/2.6.5/lib/ruby/2.6.0/rubygems/core_ext/kernel_require.rb:54:in `require'
+	22: from /Users/tech-camp/.rbenv/versions/2.6.5/lib/ruby/gems/2.6.0/gems/spring-2.1.0/lib/spring/binstub.rb:11:in `<top (required)>'
+	21: from /Users/tech-camp/.rbenv/versions/2.6.5/lib/ruby/gems/2.6.0/gems/spring-2.1.0/lib/spring/binstub.rb:11:in `load'
+	20: from /Users/tech-camp/.rbenv/versions/2.6.5/lib/ruby/gems/2.6.0/gems/spring-2.1.0/bin/spring:49:in `<top (required)>'
+	19: from /Users/tech-camp/.rbenv/versions/2.6.5/lib/ruby/gems/2.6.0/gems/spring-2.1.0/lib/spring/client.rb:30:in `run'
+	18: from /Users/tech-camp/.rbenv/versions/2.6.5/lib/ruby/gems/2.6.0/gems/spring-2.1.0/lib/spring/client/command.rb:7:in `call'
+	17: from /Users/tech-camp/.rbenv/versions/2.6.5/lib/ruby/gems/2.6.0/gems/spring-2.1.0/lib/spring/client/rails.rb:28:in `call'
+	16: from /Users/tech-camp/.rbenv/versions/2.6.5/lib/ruby/gems/2.6.0/gems/spring-2.1.0/lib/spring/client/rails.rb:28:in `load'
+	15: from /Users/tech-camp/基礎3.0/projects/first_app/bin/rails:9:in `<top (required)>'
+	14: from /Users/tech-camp/.rbenv/versions/2.6.5/lib/ruby/gems/2.6.0/gems/activesupport-6.0.3.2/lib/active_support/dependencies.rb:324:in `require'
+	13: from /Users/tech-camp/.rbenv/versions/2.6.5/lib/ruby/gems/2.6.0/gems/activesupport-6.0.3.2/lib/active_support/dependencies.rb:291:in `load_dependency'
+	12: from /Users/tech-camp/.rbenv/versions/2.6.5/lib/ruby/gems/2.6.0/gems/activesupport-6.0.3.2/lib/active_support/dependencies.rb:324:in `block in require'
+	11: from /Users/tech-camp/.rbenv/versions/2.6.5/lib/ruby/gems/2.6.0/gems/bootsnap-1.4.8/lib/bootsnap/load_path_cache/core_ext/kernel_require.rb:31:in `require'
+	10: from /Users/tech-camp/.rbenv/versions/2.6.5/lib/ruby/gems/2.6.0/gems/bootsnap-1.4.8/lib/bootsnap/load_path_cache/core_ext/kernel_require.rb:22:in `require_with_bootsnap_lfi'
+	 9: from /Users/tech-camp/.rbenv/versions/2.6.5/lib/ruby/gems/2.6.0/gems/bootsnap-1.4.8/lib/bootsnap/load_path_cache/loaded_features_index.rb:92:in `register'
+	 8: from /Users/tech-camp/.rbenv/versions/2.6.5/lib/ruby/gems/2.6.0/gems/bootsnap-1.4.8/lib/bootsnap/load_path_cache/core_ext/kernel_require.rb:23:in `block in require_with_bootsnap_lfi'
+	 7: from /Users/tech-camp/.rbenv/versions/2.6.5/lib/ruby/gems/2.6.0/gems/bootsnap-1.4.8/lib/bootsnap/load_path_cache/core_ext/kernel_require.rb:23:in `require'
+	 6: from /Users/tech-camp/.rbenv/versions/2.6.5/lib/ruby/gems/2.6.0/gems/railties-6.0.3.2/lib/rails/commands.rb:18:in `<main>'
+	 5: from /Users/tech-camp/.rbenv/versions/2.6.5/lib/ruby/gems/2.6.0/gems/railties-6.0.3.2/lib/rails/command.rb:46:in `invoke'
+	 4: from /Users/tech-camp/.rbenv/versions/2.6.5/lib/ruby/gems/2.6.0/gems/railties-6.0.3.2/lib/rails/command/base.rb:69:in `perform'
+	 3: from /Users/tech-camp/.rbenv/versions/2.6.5/lib/ruby/gems/2.6.0/gems/thor-1.0.1/lib/thor.rb:392:in `dispatch'
+	 2: from /Users/tech-camp/.rbenv/versions/2.6.5/lib/ruby/gems/2.6.0/gems/thor-1.0.1/lib/thor/invocation.rb:127:in `invoke_command'
+	 1: from /Users/tech-camp/.rbenv/versions/2.6.5/lib/ruby/gems/2.6.0/gems/thor-1.0.1/lib/thor/command.rb:27:in `run'
+/Users/tech-camp/.rbenv/versions/2.6.5/lib/ruby/gems/2.6.0/gems/railties-6.0.3.2/lib/rails/commands/dbconsole/dbconsole_command.rb:164:in `perform': wrong number of arguments (given 1, expected 0) (ArgumentError)
+	28: from bin/rails:3:in `<main>'
+	27: from bin/rails:3:in `load'
+	26: from /Users/tech-camp/基礎3.0/projects/first_app/bin/spring:15:in `<top (required)>'
+	25: from /Users/tech-camp/.rbenv/versions/2.6.5/lib/ruby/2.6.0/rubygems/core_ext/kernel_require.rb:54:in `require'
+	24: from /Users/tech-camp/.rbenv/versions/2.6.5/lib/ruby/2.6.0/rubygems/core_ext/kernel_require.rb:54:in `require'
+	23: from /Users/tech-camp/.rbenv/versions/2.6.5/lib/ruby/gems/2.6.0/gems/spring-2.1.0/lib/spring/binstub.rb:11:in `<top (required)>'
+	22: from /Users/tech-camp/.rbenv/versions/2.6.5/lib/ruby/gems/2.6.0/gems/spring-2.1.0/lib/spring/binstub.rb:11:in `load'
+	21: from /Users/tech-camp/.rbenv/versions/2.6.5/lib/ruby/gems/2.6.0/gems/spring-2.1.0/bin/spring:49:in `<top (required)>'
+	20: from /Users/tech-camp/.rbenv/versions/2.6.5/lib/ruby/gems/2.6.0/gems/spring-2.1.0/lib/spring/client.rb:30:in `run'
+	19: from /Users/tech-camp/.rbenv/versions/2.6.5/lib/ruby/gems/2.6.0/gems/spring-2.1.0/lib/spring/client/command.rb:7:in `call'
+	18: from /Users/tech-camp/.rbenv/versions/2.6.5/lib/ruby/gems/2.6.0/gems/spring-2.1.0/lib/spring/client/rails.rb:28:in `call'
+	17: from /Users/tech-camp/.rbenv/versions/2.6.5/lib/ruby/gems/2.6.0/gems/spring-2.1.0/lib/spring/client/rails.rb:28:in `load'
+	16: from /Users/tech-camp/基礎3.0/projects/first_app/bin/rails:9:in `<top (required)>'
+	15: from /Users/tech-camp/.rbenv/versions/2.6.5/lib/ruby/gems/2.6.0/gems/activesupport-6.0.3.2/lib/active_support/dependencies.rb:324:in `require'
+	14: from /Users/tech-camp/.rbenv/versions/2.6.5/lib/ruby/gems/2.6.0/gems/activesupport-6.0.3.2/lib/active_support/dependencies.rb:291:in `load_dependency'
+	13: from /Users/tech-camp/.rbenv/versions/2.6.5/lib/ruby/gems/2.6.0/gems/activesupport-6.0.3.2/lib/active_support/dependencies.rb:324:in `block in require'
+	12: from /Users/tech-camp/.rbenv/versions/2.6.5/lib/ruby/gems/2.6.0/gems/bootsnap-1.4.8/lib/bootsnap/load_path_cache/core_ext/kernel_require.rb:31:in `require'
+	11: from /Users/tech-camp/.rbenv/versions/2.6.5/lib/ruby/gems/2.6.0/gems/bootsnap-1.4.8/lib/bootsnap/load_path_cache/core_ext/kernel_require.rb:22:in `require_with_bootsnap_lfi'
+	10: from /Users/tech-camp/.rbenv/versions/2.6.5/lib/ruby/gems/2.6.0/gems/bootsnap-1.4.8/lib/bootsnap/load_path_cache/loaded_features_index.rb:92:in `register'
+	 9: from /Users/tech-camp/.rbenv/versions/2.6.5/lib/ruby/gems/2.6.0/gems/bootsnap-1.4.8/lib/bootsnap/load_path_cache/core_ext/kernel_require.rb:23:in `block in require_with_bootsnap_lfi'
+	 8: from /Users/tech-camp/.rbenv/versions/2.6.5/lib/ruby/gems/2.6.0/gems/bootsnap-1.4.8/lib/bootsnap/load_path_cache/core_ext/kernel_require.rb:23:in `require'
+	 7: from /Users/tech-camp/.rbenv/versions/2.6.5/lib/ruby/gems/2.6.0/gems/railties-6.0.3.2/lib/rails/commands.rb:18:in `<main>'
+	 6: from /Users/tech-camp/.rbenv/versions/2.6.5/lib/ruby/gems/2.6.0/gems/railties-6.0.3.2/lib/rails/command.rb:46:in `invoke'
+	 5: from /Users/tech-camp/.rbenv/versions/2.6.5/lib/ruby/gems/2.6.0/gems/railties-6.0.3.2/lib/rails/command/base.rb:69:in `perform'
+	 4: from /Users/tech-camp/.rbenv/versions/2.6.5/lib/ruby/gems/2.6.0/gems/thor-1.0.1/lib/thor.rb:392:in `dispatch'
+	 3: from /Users/tech-camp/.rbenv/versions/2.6.5/lib/ruby/gems/2.6.0/gems/thor-1.0.1/lib/thor/invocation.rb:127:in `invoke_command'
+	 2: from /Users/tech-camp/.rbenv/versions/2.6.5/lib/ruby/gems/2.6.0/gems/thor-1.0.1/lib/thor/command.rb:20:in `run'
+	 1: from /Users/tech-camp/.rbenv/versions/2.6.5/lib/ruby/gems/2.6.0/gems/thor-1.0.1/lib/thor/command.rb:34:in `rescue in run'
+/Users/tech-camp/.rbenv/versions/2.6.5/lib/ruby/gems/2.6.0/gems/thor-1.0.1/lib/thor/base.rb:525:in `handle_argument_error': ERROR: "rails dbconsole" was called with arguments ["migrate"] (Thor::InvocationError)
+Usage: "rails dbconsole [options]"
+tech-campnoMacBook-Air-6:first_app tech-camp$ rails db:migrate
